@@ -1,0 +1,9 @@
+query GetWarehouses {
+  allWarehouses {
+    nodes {
+      nodeId
+      id
+      name
+    }
+  }
+}

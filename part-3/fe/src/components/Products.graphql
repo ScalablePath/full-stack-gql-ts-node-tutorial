@@ -1,0 +1,12 @@
+query GetProducts {
+  allProducts {
+    nodes {
+      nodeId
+      id
+      description
+      uomByUomId {
+        abbrev
+      }
+    }
+  }
+}

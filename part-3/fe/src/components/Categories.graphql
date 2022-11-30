@@ -1,0 +1,33 @@
+query GetCategories {
+  allCategories {
+    nodes {
+      nodeId
+      id
+      description
+    }
+  }
+}
+
+mutation AddCategory($description: String!) {
+  createCategory(input: { category: { description: $description } }) {
+    category {
+      nodeId
+    }
+  }
+}
+
+mutation DeleteCategory($nodeId: ID!) {
+  deleteCategory(input: { nodeId: $nodeId }) {
+    deletedCategoryId
+  }
+}
+
+mutation UpdateCategory($nodeId: ID!, $description: String!) {
+  updateCategory(
+    input: { nodeId: $nodeId, categoryPatch: { description: $description } }
+  ) {
+    category {
+      nodeId
+    }
+  }
+}

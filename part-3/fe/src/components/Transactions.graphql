@@ -1,0 +1,46 @@
+fragment StockData on WarehouseStock {
+  quantity
+  warehouseByWarehouseId {
+    name
+  }
+  productByProductId {
+    description
+  }
+}
+
+fragment TransactionData on InventoryTransaction {
+  id
+  quantity
+  date
+  type
+  productByProductId {
+    description
+  }
+  warehouseByWarehouseId {
+    name
+  }
+}
+
+query GetWarehousesStocks {
+  allWarehouseStocks {
+    nodes {
+      nodeId
+      ...StockData
+    }
+  }
+}
+
+query GetInventoryTransactions {
+  allInventoryTransactions(orderBy: DATE_ASC) {
+    nodes {
+      nodeId
+      ...TransactionData
+    }
+  }
+}
+
+mutation RegisterTransaction($input: RegisterTransactionInput!) {
+  registerTransaction(input: $input) {
+    transactionId
+  }
+}

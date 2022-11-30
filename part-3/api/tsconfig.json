@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "es2018",
+      "lib": ["es2018"],
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "rootDir": "src",
+      "resolveJsonModule": true,
+      "allowJs": true,
+      "outDir": "build",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "strictPropertyInitialization": false,
+      "noImplicitAny": true,
+      "skipLibCheck": true
+    }
+}
+  
