@@ -6,4 +6,4 @@
 - And start the server with:
 `npm run start`
 
-Please make sure that you have the API backend running to start the frontend.
+Additional information are found [here](https://www.scalablepath.com/full-stack/graphql-and-postgraphile-integration-full-stack-tutorial-part-2).

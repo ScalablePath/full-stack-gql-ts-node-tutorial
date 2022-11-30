@@ -5,5 +5,3 @@
 
 - And start the server with:
 `npm run start`
-
-Please make sure that you have the API backend running to start the frontend.
