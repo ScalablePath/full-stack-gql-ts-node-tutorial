@@ -6,4 +6,4 @@
 - And run it with:
 `npm run start`
 
-Note: please make sure to configure the DB following the instructions described in Part 1 of the blog post found [here] (https://www.scalablepath.com/full-stack/graphql-api-full-stack-tutorial-part-1).
+Note: please make sure to configure the DB following the instructions described in Part 1 of the blog post found [here](https://www.scalablepath.com/full-stack/graphql-api-full-stack-tutorial-part-1).
